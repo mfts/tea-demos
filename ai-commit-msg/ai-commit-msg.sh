@@ -28,10 +28,8 @@ fi
 GIT_HOOKS_PATH=$(tea +git-scm.org git rev-parse --git-path hooks)
 tea +gnu.org/wget wget -O $GIT_HOOKS_PATH/prepare-commit-msg https://gist.githubusercontent.com/stoooops/d9a633626c0b429146f3a7c4ad224716/raw/07367236e0dc3951a78b518866a2c4fea075ea4c/prepare-commit-msg.py
 
+# make the file executable
 chmod +x $GIT_HOOKS_PATH/prepare-commit-msg
-
-# unset git core.editor locally
-tea +git-scm.org git config --local --unset core.editor
 
 
 # add OPENAI_API_KEY to env
