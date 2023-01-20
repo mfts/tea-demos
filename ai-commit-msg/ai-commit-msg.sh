@@ -31,6 +31,7 @@ tea +gnu.org/wget wget -O $GIT_HOOKS_PATH/prepare-commit-msg https://gist.github
 # make the file executable
 chmod +x $GIT_HOOKS_PATH/prepare-commit-msg
 
+tea +python.org^3 echo && source <(tea +python.org^3 --dry-run)
 
 # add OPENAI_API_KEY to env
 tea +charm.sh/gum gum format "finally, you need an \`OPENAI\` API key in your environment"
