@@ -26,7 +26,7 @@ fi
 
 # clone prepare-commit-msg file to git_hook_path
 GIT_HOOKS_PATH=$(tea +git-scm.org git rev-parse --git-path hooks)
-tea +gnu.org/wget wget -O $GIT_HOOKS_PATH/prepare-commit-msg https://github.com/mfts/tea-demos/blob/feat/ai-commit-msg/ai-commit-msg/prepare-commit-msg.py
+tea +gnu.org/wget wget -O $GIT_HOOKS_PATH/prepare-commit-msg https://raw.githubusercontent.com/mfts/tea-demos/feat/ai-commit-msg/ai-commit-msg/prepare-commit-msg.py
 
 # make the file executable
 chmod +x $GIT_HOOKS_PATH/prepare-commit-msg
